@@ -27,7 +27,7 @@ end
 # returns the product of the two numbers.
 
 get "/multiply/:num1/:num2" do
-  @sum = params[:num1]*params[:num2]
+  @sum = params[:num1].to_i*params[:num2].to_i
   "#{sum}"
 end
 
