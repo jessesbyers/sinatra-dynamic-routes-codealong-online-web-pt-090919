@@ -26,4 +26,9 @@ end
 # A dynamic route starting with /multiply that accepts two params (num1 and num2) and
 # returns the product of the two numbers.
 
+get "/multiply/:num1/:num2" do
+  @sum = params[:num1]*params[:num2]
+  "#{sum}"
+end
+
 end
